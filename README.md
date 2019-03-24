@@ -49,6 +49,67 @@
     We try our best to follow the clean coding requirements. 
     We also use SonarLint to help us find improper coding. 
 
+- Instruction  
+    Direct execute the main function in PizzaParlour.
+    Strict follow the prompt in command line.  
+    (note: case insensitive)  
+    here is a sample step flow:
+
+#
+Welcome to 301 Pizza!:   
+Please choose your service 1-new order or 2-current order  
+>1 
+
+Would you like to order in, or make a delivery order?: (type 'order in' or 'delivery')  
+>delivery
+
+Here is our menu:    
+small margherita 6.0  
+chicken 2.0  
+....  
+
+Please choose one of the following type of piazza or type # if enough: [Pepperoni] [Margherita] [Vegetarian] [Neapolitan] [Custom]   
+>custom 
+
+Please choose one of the following CUSTOM pizzas: [Cheese] [Hawaii]   
+>cheese
+
+Please choose one of the following size: Small Medium Large   
+>medium 
+
+Please choose one of the following toppings or type # if enough [Olives] [Tomatoes] [Mushrooms] [Jalapenos] [Chicken] [Beef] [Pepperon]   
+>olives
+
+Please choose one of the following toppings or type # if enough [Olives] [Tomatoes] [Mushrooms] [Jalapenos] [Chicken] [Beef] [Pepperon]   
+>\# 
+
+make preparation for cheese  
+Please choose one of the following type of piazza or type # if enough: [Pepperoni] [Margherita] [Vegetarian] [Neapolitan] [Custom]   
+>\#
+
+Please choose one of the following drinks or type # if enough [Coke] [Diet Coke] [Coke Zero] [Pepsi] [Diet Pepsi] [Dr. Pepper] [Water] [Juice]   
+>diet coke 
+
+Please choose one of the following drinks or type # if enough [Coke] [Diet Coke] [Coke Zero] [Pepsi] [Diet Pepsi] [Dr. Pepper] [Water] [Juice]   
+>\# 
+
+Here is the detail of your order: {orderNumber=1, pizzas=[Pizza{type=cheese, size=Medium, toppings =Olives Tomatoes Olives } ], drinks=Diet Coke }  
+The total price is 9.0  
+Please choose one of the following delivery method[Pickup] [Store Delivery] [Uber Eats] [Foodora]   
+>Uber eats
+
+Please enter your address  
+>10 stgeorge
+
+Uber Eats - get delivery detail in JSON:   
+{  
+Address:10 stgeorge,   
+Order Details: {orderNumber=1, pizzas=[Pizza{type=cheese, size=Medium, toppings =Olives Tomatoes Olives } ], drinks=Diet Coke },   
+Order Number: 1  
+}  
+Thank you, we will delivery your order to you  
+Order finished! press 1 to back to main page, other keys to   exit  
+
 
  
 
