@@ -1,9 +1,6 @@
 package a2;
 
 import java.io.File;
-import java.io.FilenameFilter;
-import java.util.ArrayList;
-import java.util.List;
 
 public enum PizzaType {
     PEPPERONI("Pepperoni"), MARGHERITA("Margherita"), VEGETARIAN("Vegetarian"), NEAPOLITAN("Neapolitan"), CUSTOM("Custom");
@@ -21,7 +18,7 @@ public enum PizzaType {
     }
 
     public static String getAllTypes(){
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for(PizzaType type: PizzaType.values()){
             sb.append("["  + type.toString() + "]" );
             sb.append(" ");
@@ -39,7 +36,7 @@ public enum PizzaType {
     }
 
     public static String getAllCustomType() {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         // create new file
         File f = new File("src/main/java/a2/CUSTOM_recipe");
         // returns pathnames for files and directory

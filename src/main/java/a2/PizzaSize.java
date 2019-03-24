@@ -16,7 +16,7 @@ public enum PizzaSize {
     }
 
     public static String getAllSize(){
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for(PizzaSize size: PizzaSize.values()){
             sb.append(size.toString());
             sb.append(" ");

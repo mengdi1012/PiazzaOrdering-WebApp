@@ -49,12 +49,12 @@ public class Order {
 
     @Override
     public String toString() {
-        StringBuffer pizzaPrint = new StringBuffer();
+        StringBuilder pizzaPrint = new StringBuilder();
         for(Pizza pizza: this.pizzas){
             pizzaPrint.append(pizza.toString());
             pizzaPrint.append(" ");
         }
-        StringBuffer drinkPrint = new StringBuffer();
+        StringBuilder drinkPrint = new StringBuilder();
 
         for(Drink drink: this.drinks){
             drinkPrint.append(drink.toString());

@@ -10,7 +10,6 @@ public class Menu {
 
     private Menu() {
         this.menu = new HashMap<String, Float>();
-        Map<String, Float> manHs = new HashMap<String, Float>();
         File menuFile = new File("src/main/java/a2/menu.csv");
         BufferedReader br = null;
         try
@@ -62,7 +61,7 @@ public class Menu {
 
     @Override
     public String toString() {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for(Map.Entry<String, Float> item: this.menu.entrySet()){
             sb.append(item.getKey() + " " + item.getValue().toString());
             sb.append("\n");

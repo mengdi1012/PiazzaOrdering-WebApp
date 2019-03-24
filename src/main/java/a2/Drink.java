@@ -17,7 +17,7 @@ public enum Drink {
     }
 
     public static String getAllDrinks(){
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for(Drink drink: Drink.values()){
             sb.append("[" + drink.toString() + "]");
             sb.append(" ");

@@ -50,7 +50,7 @@ public abstract class Pizza<T> {
 
     @Override
     public String toString() {
-        StringBuffer toppingPrint = new StringBuffer();
+        StringBuilder toppingPrint = new StringBuilder();
         for(Topping topping: this.defaultToppings){
             toppingPrint.append(topping.toString());
             toppingPrint.append(" ");

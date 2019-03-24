@@ -16,7 +16,7 @@ public enum DeliveryType {
     }
 
     public static String getAllDeliveryTypes(){
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for(DeliveryType type: DeliveryType.values()){
             sb.append("[" + type.toString() + "]");
             sb.append(" ");

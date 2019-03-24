@@ -17,7 +17,7 @@ public enum Topping {
     }
 
     public static String getAllToppings(){
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for(Topping topping: Topping.values()){
             sb.append("["  + topping.toString() + "]");
             sb.append(" ");
