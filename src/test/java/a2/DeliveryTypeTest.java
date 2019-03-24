@@ -13,22 +13,22 @@ public class DeliveryTypeTest {
     }
 
     @Test
-    public void testGetDevelieryTypePickup() throws Exception {
+    public void testGetDeliveryTypePickup() throws Exception {
         assertEquals(DeliveryType.pickup, DeliveryType.getDevelieryType("pickup"));
     }
 
     @Test
-    public void testGetDevelieryTypeInhouse() throws Exception {
+    public void testGetDeliveryTypeInhouse() throws Exception {
         assertEquals(DeliveryType.inhouse, DeliveryType.getDevelieryType("Store Delivery"));
     }
 
     @Test
-    public void testGetDevelieryTypeUbereats() throws Exception {
+    public void testGetDeliveryTypeUbereats() throws Exception {
         assertEquals(DeliveryType.ubereats, DeliveryType.getDevelieryType("Uber Eats"));
     }
 
     @Test
-    public void testGetDevelieryTypeFoodora() throws Exception {
+    public void testGetDeliveryTypeFoodora() throws Exception {
         assertEquals(DeliveryType.foodora, DeliveryType.getDevelieryType("Foodora"));
     }
 
