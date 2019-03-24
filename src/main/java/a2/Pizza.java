@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract class Pizza<T> {
     private T type;
-    private PizzaSize size;
+    private PizzaSize size = PizzaSize.SMALL;
     private List<Topping> defaultToppings = new ArrayList<Topping>();
     private List<Topping> extraToppings = new ArrayList<Topping>();
 
