@@ -46,7 +46,7 @@ public abstract class Pizza<T> {
         this.extraToppings = extraToppings;
     }
 
-    public abstract void preprare();
+    public abstract void prepare();
 
     @Override
     public String toString() {

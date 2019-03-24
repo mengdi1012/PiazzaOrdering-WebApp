@@ -4,10 +4,10 @@ public class Neapolitan extends Pizza<PizzaType> {
 
     public Neapolitan(){
         setType(PizzaType.NEAPOLITAN);
-        preprare();
+        prepare();
     }
 
-    public void preprare() {
+    public void prepare() {
         System.out.println("make preparation for Neapolitan");
         addDefaultTopping(Topping.JALAPENOS);
     }

@@ -4,10 +4,10 @@ public class Margherita extends Pizza<PizzaType> {
 
     public Margherita(){
         setType(PizzaType.MARGHERITA);
-        preprare();
+        prepare();
     }
 
-    public void preprare() {
+    public void prepare() {
         System.out.println("make preparation for Margherita");
         addDefaultTopping(Topping.MUSHROOMS);
     }

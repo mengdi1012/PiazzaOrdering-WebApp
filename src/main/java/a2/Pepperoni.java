@@ -5,10 +5,10 @@ public class Pepperoni extends Pizza<PizzaType> {
     public Pepperoni(){
 
         setType(PizzaType.PEPPERONI);
-        preprare();
+        prepare();
     }
 
-    public void preprare() {
+    public void prepare() {
         System.out.println("make preparation for Pepperoni");
         addDefaultTopping(Topping.PEPPERON);
     }
