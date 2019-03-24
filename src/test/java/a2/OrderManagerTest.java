@@ -30,6 +30,7 @@ public class OrderManagerTest {
         Order newOrder = orderManager.getOrderBuilder().pizzas(pizzas).drinks(drinks).build();
         orderManager.createNewOrder(newOrder);
         assertEquals(orderManager.getOrder(newOrder.getOrderNumber()), newOrder);
-
+        String expect = "{orderNumber=0, pizzas=[Pizza{type=Vegetarian, size=Small, toppings =Olives Tomatoes } ], drinks=Coke }";
+        assertEquals(expect, newOrder.toString().trim());
     }
 }
