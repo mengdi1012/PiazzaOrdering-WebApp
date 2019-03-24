@@ -7,7 +7,6 @@ public class Order {
     private int orderNumber;
     private List<Pizza> pizzas;
     private List<Drink> drinks;
-    private float price;
 
     public int getOrderNumber() {
         return orderNumber;
@@ -34,7 +33,7 @@ public class Order {
         this.pizzas = new ArrayList<Pizza>();
         this.drinks = new ArrayList<Drink>();
     }
-    
+
     @Override
     public String toString() {
         StringBuilder pizzaPrint = new StringBuilder();
