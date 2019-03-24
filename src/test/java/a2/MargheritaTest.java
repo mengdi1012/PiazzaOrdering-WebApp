@@ -7,10 +7,9 @@ import static org.junit.Assert.*;
 public class MargheritaTest {
 
     @Test
-    public void testPreprare() {
-        Vegetarian vegetarian = new Vegetarian();
-        assert(vegetarian.getType().equals(PizzaType.VEGETARIAN));
-        assert(vegetarian.getDefaultToppings().contains(Topping.OLIVES));
-        assert(vegetarian.getDefaultToppings().contains(Topping.TOMATOES));
+    public void testPrepare() {
+        Margherita margherita = new Margherita();
+        assert(margherita.getType().equals(PizzaType.MARGHERITA));
+        assert(margherita.getDefaultToppings()).contains(Topping.MUSHROOMS);
     }
 }
