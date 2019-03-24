@@ -45,11 +45,18 @@
     - Function design  
     We use standard and intuitive function name in our project. We also decompose complex functions into simpler sub-functions. We use less comment and we don't have  commented out code left.
 
--Line Coverage  
+- Line Coverage  
     With main: 69% line coverage  
     Without main: 91% line coverage    
     (A lot of command-line interface code in main)  
+
+- Data persistence  
+    We have two persistent file: "menu.csv", custom types of pizza under custom_recipe like "Cheese, Hawaii"  
+    menu.csv is for storing the menu information for different pizzas, drinks and extra toppings  
+    custom_recipe is for custom pizza type with file name be the new pizza type name, content is the default toppings  
+    Both of the files support editing directly, any changes will be reflected by our application  
     
+
 - Code Craftsmanship  
     We try our best to follow the clean coding requirements. 
     We also use SonarLint to help us find improper coding. 
