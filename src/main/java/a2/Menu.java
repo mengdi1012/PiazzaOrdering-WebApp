@@ -39,24 +39,8 @@ public class Menu {
         return menuInstance;
     }
 
-    public void addItem(String name, Float price){
-        this.menu.put(name, price);
-    }
-
-    public void removeItem(String name){
-        this.menu.remove(name);
-    }
-
     public Float getPrice(String name){
         return this.menu.get(name.toLowerCase());
-    }
-
-    public void printFullMenu() {
-        Set<String> key = this.menu.keySet();
-        for (Iterator<String> it = key.iterator(); it.hasNext(); ) {
-            String s = it.next();
-            System.out.println(s + ":" + this.menu.get(s));
-        }
     }
 
     @Override

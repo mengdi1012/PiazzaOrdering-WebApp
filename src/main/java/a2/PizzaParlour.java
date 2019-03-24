@@ -8,8 +8,6 @@ public class PizzaParlour {
 
         OrderManager orderManager = OrderManager.getOrderManager();
         Menu menu = Menu.getMenuInstance();
-//        System.out.println(menu.getPrice("medium Pepperoni"));
-
         while (true) {
             System.out.println("Welcome to 301 Pizza!: ");
             System.out.println("Please choose your service 1-new order or 2-current order");
