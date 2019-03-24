@@ -1,8 +1,8 @@
 package a2;
 
 public enum Drink {
-    coke("Coke"),dietcoke("Diet Coke"), Cokezero("Coke Zero"), pepsi("Pepsi"), dietpepsi("Diet Pepsi"), pepper("Dr. Pepper"),
-    water("Water"), juice("Juice");
+    COKE("Coke"),DIETCOKE("Diet Coke"), COKEZERO("Coke Zero"), PEPSI("Pepsi"), DIETPEPSO("Diet Pepsi"), PEPPER("Dr. Pepper"),
+    WATER("Water"), JUICE("Juice");
 
     private final String drink;
     private Drink(String drink)
