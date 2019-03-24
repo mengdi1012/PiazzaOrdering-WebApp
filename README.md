@@ -11,9 +11,11 @@
 
     - Reflection:  
         - Positives: 
-            - Many mistakes are detected at the time they are typed 
-            - Solves problems faster with two people than one
-            - More enjoyable working experience
+            -	Many mistakes are detected at the time when we are typed. Especially for spelling mistake and syntax issues.
+            -	Very helpful when driver forgot about how to use an API function or parameters, it is very effective to get a                 face-to-face instruction instead searching online. 
+            -	Solves problems faster, able to share directly our knowledge and thinking.
+            -	More enjoyable working experience compare with working alone in front of a computer.
+
 
         - Negatives:
             - Hard to find common free time of at least 2 hours for both
