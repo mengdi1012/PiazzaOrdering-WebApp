@@ -3,18 +3,18 @@ package a2;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Pizza {
-    private PizzaType type;
+public abstract class Pizza<T> {
+    private T type;
     private PizzaSize size;
     private List<Topping> defaultToppings = new ArrayList<Topping>();
     private List<Topping> extraToppings = new ArrayList<Topping>();
 
 
-    public PizzaType getType() {
+    public T getType() {
         return type;
     }
 
-    public void setType(PizzaType type) {
+    public void setType(T type) {
         this.type = type;
     }
 
@@ -47,4 +47,22 @@ public abstract class Pizza {
     }
 
     public abstract void preprare();
+
+    @Override
+    public String toString() {
+        StringBuffer toppingPrint = new StringBuffer();
+        for(Topping topping: this.defaultToppings){
+            toppingPrint.append(topping.toString());
+            toppingPrint.append(" ");
+        }
+        for(Topping topping: this.extraToppings){
+            toppingPrint.append(topping.toString());
+            toppingPrint.append(" ");
+        }
+        return "Pizza{" +
+                "type=" + type +
+                ", size=" + size +
+                ", toppings =" + toppingPrint.toString() +
+                '}';
+    }
 }

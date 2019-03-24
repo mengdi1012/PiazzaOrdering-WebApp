@@ -1,6 +1,6 @@
 package a2;
 
-public class Pepperoni extends Pizza {
+public class Pepperoni extends Pizza<PizzaType> {
 
     public Pepperoni(){
 
