@@ -9,7 +9,7 @@ public class CustomPizzaTest {
     @Test
     public void testCustomPizzaCreation() throws Exception {
         CustomPizza pizza = new CustomPizza("Cheese");
-        pizza.preprare();
+        pizza.prepare();
         assert(true);
     }
 }

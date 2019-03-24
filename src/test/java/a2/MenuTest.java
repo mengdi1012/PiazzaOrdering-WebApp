@@ -22,6 +22,6 @@ public class MenuTest {
     @Test
     public void testToString() {
         String token = Topping.OLIVES.toString() + " " + menu.getPrice(Topping.OLIVES.toString());
-        assert(menu.toString().contains(token));
+        assert(menu.toString().contains(token.toLowerCase()));
     }
 }

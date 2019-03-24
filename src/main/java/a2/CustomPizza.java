@@ -17,10 +17,10 @@ public class CustomPizza extends Pizza<String> {
                 addDefaultTopping(Topping.getTopping(topping.trim()));
             }
         }
-        preprare();
+        prepare();
     }
 
-    public void preprare() { ;
+    public void prepare() { ;
         System.out.println("make preparation for " + this.getType());
     }
 }
