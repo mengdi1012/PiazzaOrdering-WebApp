@@ -24,8 +24,8 @@
     - Design Patterns   
         - Factory Method Design Pattern in creation of pizza. We have 4 default pizza type classes: pepperoni, margherita, vegetarian, Neapolitan. Each of them have different preparations(different default toppings).
         - Adapter Design Pattern in sending delivery request.
-        Since Uber Eats and Foodora require different format of delivery details one is JSON, one is CSV. Hence we create a DeliveryServiceAdapter which will sending delivery request of delivery details in different format based on the DeliveryType - (own, Uber Eats, Foodora) like following:
-            - Own(Pizza parlour’s in-house delivery person):  
+        Since Uber Eats and Foodora require different format of delivery details one is JSON, one is CSV. Hence we create a DeliveryServiceAdapter which will sending delivery request of delivery details in different format based on the DeliveryType - (Inhouse, Uber Eats, Foodora) like following:
+            - Inhouse(Pizza parlour’s in-house delivery person):  
             Pizza parlour’s in-house delivery person
             a2.DeliveryDetail@6d6f6e28
             (Since we just pass in the DeliveryDetail object)
