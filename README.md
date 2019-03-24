@@ -45,6 +45,11 @@
     - Function design  
     We use standard and intuitive function name in our project. We also decompose complex functions into simpler sub-functions. We use less comment and we don't have  commented out code left.
 
+-Line Coverage  
+    With main: 69% line coverage  
+    Without main: 91% line coverage    
+    (A lot of command-line interface code in main)  
+    
 - Code Craftsmanship  
     We try our best to follow the clean coding requirements. 
     We also use SonarLint to help us find improper coding. 
