@@ -1,6 +1,6 @@
 package a2;
 
-public class Neapolitan extends Pizza {
+public class Neapolitan extends Pizza<PizzaType> {
 
     public Neapolitan(){
         setType(PizzaType.neapolitan);

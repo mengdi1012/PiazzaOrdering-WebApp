@@ -15,4 +15,22 @@ public enum Topping {
     {
         return topping;
     }
+
+    public static String getAllToppings(){
+        StringBuffer sb = new StringBuffer();
+        for(Topping topping: Topping.values()){
+            sb.append("["  + topping.toString() + "]");
+            sb.append(" ");
+        }
+        return sb.toString();
+    }
+
+    public static Topping getTopping(String inputTopping) throws Exception {
+        for(Topping topping: Topping.values()){
+            if(topping.toString().equalsIgnoreCase(inputTopping)){
+                return topping;
+            }
+        }
+        throw new Exception("Topping not found: " + inputTopping);
+    }
 }
