@@ -12,8 +12,8 @@ public class CustomPizza extends Pizza<String> {
         String line = "";
         while ((line = br.readLine()) != null)
         {
-            String[] token = line.split(",");
-            for(String topping: token) {
+            String[] toppings = line.split(",");
+            for(String topping: toppings) {
                 addDefaultTopping(Topping.getTopping(topping.trim()));
             }
         }
