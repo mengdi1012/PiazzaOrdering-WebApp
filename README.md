@@ -18,9 +18,12 @@
 
 
         - Negatives:
-            - Hard to find common free time of at least 2 hours for both
-            - Easier to get distraction than alone
-            - Low coding speed, easy to be disturbed by other questions
+            -	Hard to find common free time of at least 2 hours for both
+            -	Reliance too much on other. So sometime we are not review the code that carefully compare to when we are working alone.
+            -	In the long term(working always with pair programming), we will feel no privacy and freedom when someone setting beside you and look what you are doing.
+            -	Easier to get distraction than alone
+            -	Low coding speed, easy to be disturbed by other questions
+
 
 - Program design
     - Design Patterns   
