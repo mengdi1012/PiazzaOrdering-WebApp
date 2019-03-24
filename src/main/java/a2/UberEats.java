@@ -2,15 +2,15 @@ package a2;
 
 public class UberEats implements  HomeDeliveryService{
 
-    public void getDeliverDetail(String address, String orderDetail, String orderNumber) {
+    public void getDeliverDetail(DeliveryDetail deliveryDetail) {
         //do nothing
     }
 
-    public void getDeliverDetailFromCSV(String fileName) {
-        //do nothing
+    public void getDeliveryDetailInJSON(String deliveryDetailInJSON) {
+        System.out.println("Uber Eats - get delivery detail in JSON: " + deliveryDetailInJSON);
     }
 
-    public void getDeliverDetailFromJson(String fileName) {
-        System.out.println("Ubereats - get delivery detail from JSON file: " + fileName);
+    public void getDeliveryDetailInCSV(String deliveryDetailInCSV) {
+        //do nothing
     }
 }

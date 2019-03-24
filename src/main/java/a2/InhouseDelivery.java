@@ -1,15 +1,16 @@
 package a2;
 
 public class InhouseDelivery implements HomeDeliveryService{
-    public void getDeliverDetail(String address, String orderDetail, String orderNumber) {
-        System.out.println("Pizza parlour delivery - get delivery address, order detail, order number");
+    public void getDeliverDetail(DeliveryDetail deliveryDetail) {
+        System.out.println("Pizza parlour’s in-house delivery person");
+        System.out.println(deliveryDetail);
     }
 
-    public void getDeliverDetailFromCSV(String fileName) {
+    public void getDeliveryDetailInJSON(String deliveryDetailInJSON) {
         //do nothing
     }
 
-    public void getDeliverDetailFromJson(String fileName) {
+    public void getDeliveryDetailInCSV(String deliveryDetailInCSV) {
         //do nothing
     }
 }

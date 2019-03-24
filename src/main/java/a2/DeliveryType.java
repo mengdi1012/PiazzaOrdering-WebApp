@@ -1,7 +1,7 @@
 package a2;
 
 public enum DeliveryType {
-    pickup("Pickup from store"), inhouse("own"), ubereats("Uber Eats"), foodora("Foodora");
+    pickup("Pickup"), inhouse("own"), ubereats("Uber Eats"), foodora("Foodora");
 
     private final String type;
     private DeliveryType(String type)

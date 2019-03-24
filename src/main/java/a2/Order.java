@@ -61,10 +61,10 @@ public class Order {
             drinkPrint.append(" ");
         }
 
-        return "Order{" +
+        return  "{" +
                 "orderNumber=" + orderNumber +
                 ", pizzas=[" + pizzaPrint +
                 "], drinks=" + drinkPrint +
-                '}';
+                "}";
     }
 }
