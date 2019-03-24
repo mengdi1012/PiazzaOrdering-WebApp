@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public enum PizzaType {
-    pepperoni("Pepperoni"), margherita("Margherita"), vegetarian("Vegetarian"), neapolitan("Neapolitan"), custom("Custom");
+    PEPPERONI("Pepperoni"), MARGHERITA("Margherita"), VEGETARIAN("Vegetarian"), NEAPOLITAN("Neapolitan"), CUSTOM("Custom");
 
     private final String type;
     private PizzaType(String type)
@@ -41,7 +41,7 @@ public enum PizzaType {
     public static String getAllCustomType() {
         StringBuffer sb = new StringBuffer();
         // create new file
-        File f = new File("src/main/java/a2/custom_recipe");
+        File f = new File("src/main/java/a2/CUSTOM_recipe");
         // returns pathnames for files and directory
         File[] paths = f.listFiles();
 

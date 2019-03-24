@@ -4,12 +4,12 @@ public class Pepperoni extends Pizza<PizzaType> {
 
     public Pepperoni(){
 
-        setType(PizzaType.pepperoni);
+        setType(PizzaType.PEPPERONI);
         preprare();
     }
 
     public void preprare() {
         System.out.println("make preparation for Pepperoni");
-        addDefaultTopping(Topping.pepperon);
+        addDefaultTopping(Topping.PEPPERON);
     }
 }

@@ -25,7 +25,7 @@ public class Menu {
             while ((line = br.readLine()) != null)
             {
                 String[] token = line.split(",");
-                this.menu.put(token[0], Float.valueOf(token[1]));
+                this.menu.put(token[0].toLowerCase(), Float.valueOf(token[1]));
             }
         } catch (IOException e)
         {
@@ -49,7 +49,7 @@ public class Menu {
     }
 
     public Float getPrice(String name){
-        return this.menu.get(name);
+        return this.menu.get(name.toLowerCase());
     }
 
     public void printFullMenu() {

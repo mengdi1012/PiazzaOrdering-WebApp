@@ -1,8 +1,8 @@
 package a2;
 
 public enum Topping {
-    olives("Olives"), tomatoes("Tomatoes"), mushrooms("Mushrooms"), jalapenos("Jalapenos"), chicken("Chicken"), beef("Beef"),
-    pepperon("Pepperon");
+    OLIVES("Olives"), TOMATOES("Tomatoes"), MUSHROOMS("Mushrooms"), JALAPENOS("Jalapenos"), CHICKEN("Chicken"), BEEF("Beef"),
+    PEPPERON("Pepperon");
 
     private final String topping;
     private Topping(String topping)

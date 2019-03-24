@@ -31,7 +31,7 @@ public class Pricer {
             PizzaSize size = pizza.getSize();
             String type = pizza.getType().toString();
             List<Topping> toppings = pizza.getExtraToppings();
-            amount += this.menu.getPrice(size.toString() + " " + type.toString());
+            amount += this.menu.getPrice(size.toString() + " " + type);
             for(Topping topping: toppings){
                 amount += this.menu.getPrice(topping.toString());
             }

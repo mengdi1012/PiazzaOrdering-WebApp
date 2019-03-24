@@ -1,7 +1,7 @@
 package a2;
 
 public enum PizzaSize {
-    small("Small"), medium("Medium"),large("Large");
+    SMALL("Small"), MEDIUM("Medium"),LARGE("Large");
 
     private final String size;
     private PizzaSize(String size)

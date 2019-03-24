@@ -4,9 +4,9 @@ import java.io.*;
 
 public class CustomPizza extends Pizza<String> {
 
-    public CustomPizza(String customType) throws Exception {
-        setType(customType);
-        File file = new File("src/main/java/a2/custom_recipe/" + this.getType());
+    public CustomPizza(String CUSTOMType) throws Exception {
+        setType(CUSTOMType);
+        File file = new File("src/main/java/a2/CUSTOM_recipe/" + this.getType());
         BufferedReader br = new BufferedReader(new FileReader(file));
 
         String line = "";

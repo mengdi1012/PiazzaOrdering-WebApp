@@ -4,13 +4,13 @@ public class Vegetarian extends Pizza<PizzaType> {
 
     public Vegetarian(){
 
-        setType(PizzaType.vegetarian);
+        setType(PizzaType.VEGETARIAN);
         preprare();
     }
 
     public void preprare() {
         System.out.println("make preparation for Vegetarian");
-        addDefaultTopping(Topping.olives);
-        addDefaultTopping(Topping.tomatoes);
+        addDefaultTopping(Topping.OLIVES);
+        addDefaultTopping(Topping.TOMATOES);
     }
 }

@@ -29,9 +29,17 @@ public class OrderManager {
 
     public void createNewOrder(Order newOrder){
         this.orders.put(this.number, newOrder);
+        this.number += 1;
     }
 
-    public void deleteOrder(Order newOrder){
-        this.orders.put(this.number, newOrder);
+    public Order getOrder(int orderNumber) throws Exception {
+        if(!this.orders.containsKey(orderNumber)){
+            throw new Exception("Order number not exist");
+        }
+        return this.orders.get(orderNumber);
+    }
+
+    public void deleteOrder(int orderNumber){
+        this.orders.remove(orderNumber);
     }
 }
